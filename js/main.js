@@ -17,5 +17,5 @@ navBar.forEach(function (a){
     })
 }) 
  
-
+ 
 
