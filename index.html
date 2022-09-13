@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Bootstrap 5 CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+
+    <!-- font awesome 5 CDN link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom File's Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">     <!--scrollspy property of Bootstrap-->
+    <!-- Navbar section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i> <!--shows three side lines icon on top being responsive-->
+                </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav"> <!--here justify content will move the contents of navabar to right/end--> 
+                    <ul class="navbar-nav menu-navbar-nav">  <!--here menu-navbar-nav is a class created by me -- i can modify this writing CSS-->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0">
+                            <a class="main-btn" href="#contact">Hire Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar section exit -->
+
+    <!-- Banner section -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center text-md-start">
+                    <h6>Love To Make Websites</h6>
+                    <h1>I’m Pooja</h1>
+                    
+                    <div class="mt-4">
+                        <a class="main-btn" href="POOJA (resume).pdf">Get CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section exit -->
+
+    <!-- About section -->
+    <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="images/pooja1.jpg" class="img-fluid rounded-3" alt="About Us">
+                </div>
+                <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+                    <div class="my-3 my-lg-0">
+                        <span class="subtitle">About Details</span>
+                        <h2>About Me</h2>
+                        <p>I am a front-end web developer. An intellectual personality with ability to handle complex project in a deadline driven environment.Highly reliable & commited team player want to be a part of renowned organization, to contribute towares its growth by learning new corporate exposure within the structured framework of the organization</p>
+                        
+                    </div>
+                    <div class="pt-4">   <!--nav and tabs from bootstrap-->
+                        <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-Award-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill"
+                                    aria-selected="true">Main Skills</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Award-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Award" type="button" role="tab" aria-controls="pills-Award"
+                                    aria-selected="false">Awards/Certificate</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-experiance-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-experiance" type="button" role="tab"
+                                    aria-controls="pills-experiance" aria-selected="false">CoCurricular Activities</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-education" type="button" role="tab"
+                                    aria-controls="pills-education" aria-selected="false">Education</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-skill" role="tabpanel"
+                                aria-labelledby="pills-skill-tab">
+                                <div class="single-progress">
+                                    <h6>HTML</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label">95%</span>
+                                </div>
+                                <div class="single-progress">
+                                    <h6>CSS</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label">75%</span>
+                                </div>
+                                <div class="single-progress">
+                                    <h6>SQL</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label">79%</span>
+                                </div>
+                                <div class="single-progress">
+                                    <h6>Bootstrap</h6>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="label">80%</span>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-Award" role="tabpanel"
+                                aria-labelledby="pills-Award-tab">
+                                <ul class="text-start ps-0">
+                                    <li><a href="#">Meritorious Award in Physics & Maths
+                                            </a> XII
+                                    </li>
+                                    <li><a href="#">Student of the Year Award
+                                            </a> 2018
+                                    </li>
+                                    <li><a href="#">Certificate of Merit
+                                            </a> X
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="pills-experiance" role="tabpanel"
+                                aria-labelledby="pills-experiance-tab">
+                                <ul class="text-start ps-0">
+                                    <li><a href="#">XII (Senior Secondary) (2019)
+                                    </a> Member of Bhangra team
+                                    <br>Leader of Kho-kho Team (won Bronze medal
+                                    in interschool Competition
+                                    <br>House Leader
+                                    </li>
+                                    <li><a href="#">X (Secondary) (2017)
+                                        </a> Rangoli making Competition ( 2nd position)
+<br> Card making Competition ( 2nd position)
+
+                                    </li>
+                                    
+                            </div>
+                            <div class="tab-pane fade" id="pills-education" role="tabpanel"
+                                aria-labelledby="pills-education-tab">
+                                <ul class="text-start ps-0">
+                                    <li><a href="#">Pursuing Bachelor Of Technology (B.TECH)<span>
+                                        -Guru Nank Dev University RC Jalandhar</span></a> Year: 2019- 2023 (Electronics & Computer Engineering)
+                                        <br>
+                                        CGPA: 8.94
+                                    </li>
+                                    <li><a href="#">Senior Secondary(XII)           
+                                     <span>-S.V.J.C.D.A.V Public School, Dasuya </span></a> Year of Completion: 2019
+                                     <br>
+                                     Aggregate : 92.4%
+                                    </li>
+                                    <li><a href="#">Secondary(XII)
+                                            <span>-S.V.J.C.D.A.V Public School, Dasuya</span></a> Year of Completion: 2017
+                                            <br>
+                                        CGPA: 10
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About section exit -->
+
+    <!-- Skills section -->
+    <section id="skills" class="skills_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle">What can I do for you</span>
+                    <h2>My Skills</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-md-start text-center">
+                            <img src="./images/service/service-1.svg" alt="skills" class="img-fluid mb-4">
+                            <h3>PROFICIENT</h3>
+                            <ul><li>
+                                HTML
+                            </li>
+                        <li>CSS</li>
+                        <li>SQL</li>
+                    <li></li>.</ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-md-start text-center">
+                            <img src="./images/service/service-2.svg" alt="skills" class="img-fluid mb-4">
+                            <h3>FAMILIAR</h3>
+                            <ul>
+                                <li>Bootstrap</li>
+                                <li>WordPress</li>
+                                <li>Basic JavaScript</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body text-md-start text-center">
+                            <img src="./images/service/service-3.svg" alt="skills" class="img-fluid mb-4">
+                            <h3>TOOLS</h3>
+                            <ul>
+                                <li>MS-Word</li>
+                                <li>MS-Excel</li>
+                                <li>MS-Powerpoint</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              
+               
+
+            </div>
+        </div>
+    </section>
+    <!-- Skills section exit -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-4">
+                    <span class="subtitle">My Complete projects</span>
+                    <h2>Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span style="background-image: url('./images/portfolio/GNDUimage.png')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span style="background-image: url('./images/portfolio/dancewebsite.png')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span
+                            style="background-image: url('./images/portfolio/blogwebsite.png')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span style="background-image: url('./images/portfolio/signup.png')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span style="background-image: url('./images/portfolio/loginpage.png')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span style="background-image: url('./images/portfolio/carimage\ \(2\).png')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span
+                            style="background-image: url('./images/portfolio/')"></span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card p-0">
+                        <span style="background-image: url('./images/portfolio/')"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section exit -->
+
+    <!-- Contact section -->
+    <section id="contact" class="contact_wrapper">
+        <div class="container ">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-10 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+                    <!-- <span class="subtitle">Let's Say Hi</span> -->
+                    <h2>Hire Me</h2>
+                    <div class="row call_details mb-4">
+                        <label class="col-sm-3">Mobile :</label>
+                        <div class="col-sm-9 mb-3 mb-lg-2">
+                            <a href="javascript:void(0)">+91 5673892235</a>
+                        </div>
+                        <label class="col-sm-3">Email:</label>
+                        <div class="col-sm-9 mb-3 mb-lg-2">
+                            <a href="mailto:example@gmail.com">pooja27sharma30@gmail.com</a>
+                        </div>
+                    </div> 
+                    <form>
+                        <div class="mb-4">
+                            <input type="text" class="form-control" placeholder="Your Name..." autocomplete="off">
+                        </div>
+                        <div class="mb-4">
+                            <input type="number" class="form-control" placeholder="Your Phone..." autocomplete="off">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control" placeholder="Your Email..." autocomplete="off">
+                        </div>
+                        <div class="mb-4">
+                            <input cols="40" rows="4" class="form-control" id="message"
+                                placeholder="Write a Message..." autocomplete="off">
+                        </div>
+                        <button type="submit" class="main-btn">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- contact section exit -->
+
+    <!-- Footer section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 text-center text-md-start">
+                    <div class="footer-logo mb-3 mb-md-0">
+                        <img src="images/logo.png">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center jus social-icon mb-3 mb-md-0">
+                        <li>
+                            <a href="https://www.instagram.com/_poojasharma.__/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/poojasharma922"><i class="fab fa-github"></i> </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/pooja-sharma-958742229/"><i class="fab fa-linkedin-in"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="copyright-text text-lg-start text-center mb-3 mb-lg-0">
+                        <p class="mb-0">Copyright © <a href="#">Pooja</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section exit -->
+
+    <!-- Bootstrap 5 JS CDN Links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom Js Link -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+
